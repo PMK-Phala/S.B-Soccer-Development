@@ -29,36 +29,85 @@
 
 .About{
     width: 50%;
+    min-height: auto;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
 
 .H1{
     font-size: 35px;
     font-weight: 200;
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    text-align: center;
 }
 
 .P{
     width: 90%;
-    font-size: 20px;
-    padding-top: 10px;   
+    font-size: 20px; 
+    position:absolute;
+    top: 27%;
 }
 
-.Button{
-    width: auto;
-    height: auto;
-    background-color: white;
-    color: black;
-    font-size: 20px;
-    padding: 5px;
-    margin-top: 45px;
-    border-radius: 6px;
+
+@media (max-width: 536px){
+    .Container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .About-One{
+        height: auto;
+        width: 100vw;
+        height: auto;
+    }
+
+    .HOne{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 35px;
+       font-weight: 200;
+    }
+
+    .Picture{
+        height: 70%;
+        width: 90%;
+        margin-bottom: 5%;
+    }
+
+    .Img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .About{
+        width: 100vw;
+        height: 10vh;
+    }
+
+    .H1{
+        display: none;
+    }
+    .P{
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }
 
-.Button:hover{
-    cursor: pointer;
-    background-color: black;
-    color: white;
+@media (min-width: 536px){
+    .About-One{
+        display: none;
+    }
 }
+
+@media (max-height: 458px){
+    .P{
+        font-size: 17px;
+    }
+}
+
+

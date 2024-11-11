@@ -71,3 +71,5 @@ a{
     color: orange;
     border: 1.3px solid orange;
 }
+
+const Styler={color:"yellow"}

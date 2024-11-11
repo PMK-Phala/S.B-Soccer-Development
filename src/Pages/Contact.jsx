@@ -15,6 +15,7 @@ function Contact( ){
     <Header/>
         <div className={ContactCSS["Container"]} >
             {true ? <ContactInfo/> :<JoinInfo/>}
+
             <div className={ContactCSS["Contacts"]}>
                 <div className={`${ContactCSS.Contact} ${ContactCSS.Telephone}`}>
                 <a href="tel: +27685238098"> <FontAwesomeIcon icon={faPhone} className={ContactCSS["Icon"]}  style={{color:"black"}}/> </a>

@@ -8,70 +8,70 @@
 
 .Container{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-
-
 .Contacts{
-    height: 55%;
+    height: auto;
     width: 100%;
     background-color: #bdbdbd;
     display: flex;
-    align-items: center;
     justify-content: space-around;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .Contact{
-    height: 75%;
+    height: auto;
     width: 31%;
     background-color: #fcfcfc;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 15px;
-    position: relative;
+    padding-top: 3%;
+}
+
+a{
+    width: 100%;
+    padding: 0;
 }
 
 .Icon{
     height: 40px;
-    position: absolute;
-    top: 15%;
-
+    padding-bottom: 2%;
 }
 
-
 .faLabel{
-    position: absolute;
-    top: 42%;
     font-size: 25px;
     font-weight: 200;
+    padding-bottom: 5%;
+    text-align: center;
 }
 
 .P-Info{
-    position: absolute;
-    top: 67%;
+    height: auto;
     font-size: 20px;
-    width: 70%;
+    width: 100%;
     text-align: center;
     color: #4b4b4b;
+    padding-bottom: 3%;
 }
 
 .Number{
     text-decoration: none;
     display: block;
     width: 100%;
+    padding-bottom: 3%;
 }
 
 .Instagram-link{
-    display: block;
     text-decoration: none;
-    width: 100%;
+    word-break: break-all;
 }
 
 .Gallery{
-    height: 75%;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -84,10 +84,32 @@
 
 .Image{
     width: 30%;
-    height: 83%;
+    height: 43vh;
 }
 
 .Image img{
     width: 100%;
     height: 100%;
+}
+
+@media (max-width:602px){
+    .Contacts{
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .Contact{
+        width: 100%;
+    }
+
+    .Gallery{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .Image{
+        width: 30vh;
+        height: 50vh;
+    }
+
 }
